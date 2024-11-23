@@ -1,0 +1,114 @@
+$black-50: #f2f2f2;
+$black-100: #e5e5e5;
+$black-500: #808080;
+$black-700: #4d4d4d;
+$system-blue: #007aff;
+
+a {
+  color: $system-blue;
+  text-decoration: none;
+}
+
+#loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 10px;
+  border: $black-500 2px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 50px $black-500;
+}
+
+#inputsContainer {
+  display: flex;
+  gap: 2vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#password {
+  position: relative;
+}
+
+#seePassword {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#login {
+  background-color: $system-blue;
+}
+
+#horizontalSplit {
+  margin: 10px 0;
+  height: 1px;
+  border-bottom: 1px $black-100 solid;
+}
+
+#googleLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  img {
+    margin-right: 5px;
+  }
+}
+
+#signup {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.rememberForgotBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  filter: brightness(85%);
+}
+
+.text-input {
+  background-color: $black-100;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  width: -webkit-fill-available;
+}
+
+.text-input::placeholder {
+  color: $black-500;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

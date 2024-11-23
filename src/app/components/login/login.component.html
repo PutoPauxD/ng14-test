@@ -1,0 +1,31 @@
+<section id="loginContainer" class="roboto-light">
+    <h3 class="poppins-bold">Nice to see you again</h3>
+
+    <form id="inputsContainer" [formGroup]="loginForm">
+        <input [formControlName]="'username'" class="text-input roboto-regular" type="text" placeholder="Email or phone number">
+        
+        <div id="password">
+            <input [formControlName]="'password'" [type]="shouldShowPassword ? 'text' : 'password'" class="text-input roboto-regular" placeholder="Enter password">
+            <img (click)="showHidePassword()" id="seePassword" src="assets/svgs/passwordEye.svg" alt="passwordEye">
+        </div>
+        
+        <div class="rememberForgotBox">
+            <div class="rememberMe">
+                <input [formControlName]="'shouldRemember'" type="checkbox">
+                <span>Remember me</span>
+            </div>
+            <a>Forgot password?</a>
+        </div>
+    </form>
+
+    <div (click)="login()" class="button roboto-regular" id="login">Sign in</div>
+    <div id="horizontalSplit"></div>
+    <div class="button roboto-regular" id="googleLogin">
+        <img src="assets/svgs/googleLogo.svg" alt="Google Logo" srcset="">
+        Or sign in with Google
+    </div>
+    <div id="signup">
+        <span>Don't have an account?</span>
+        <a href="">Sign up now</a>
+    </div>
+</section>
