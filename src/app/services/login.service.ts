@@ -15,7 +15,7 @@ export class LoginService {
     role: ''
   }
 
-  public login(user: UserLogin) {
+  public login(user: UserLogin): void {
     const {username, password} = user;
     const foundUser = availableUsers.find((dbUser: UserLogin) => dbUser.password === password && dbUser.username === username);
     if (foundUser) {
